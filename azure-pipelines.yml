@@ -34,7 +34,7 @@ steps:
       $smtpPass = "app-specific-password"  # Ensure you're using an app-specific password if using 2FA
       $messageSubject = "Extent Report"
       $messageBody = "Attached is the Extent Report from the latest test run."
-      $attachmentPath = "./Selenium_pipeline/test-output/extentReport.html"
+      $attachmentPath = "./test-output/extentReport.html"
       
       $smtpClient = New-Object System.Net.Mail.SmtpClient($smtpServer, 587)
       $smtpClient.EnableSsl = $true

@@ -10,9 +10,6 @@ pool:
   vmImage: ubuntu-latest
  
 steps:
--
-      
- 
 - task: Maven@3
   inputs:
     mavenPomFile: './Selenium_pipeline/pom.xml'
